@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplikasi Perpustakaan</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    header {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px 8px 0 0;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .search-form {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .search-form input[type="text"] {
+        padding: 10px;
+        width: 60%;
+        border: none;
+        border-radius: 4px 0 0 4px;
+    }
+
+    .search-form button {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        border: none;
+        color: #fff;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+
+    .book-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .book-list li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .book-list li:last-child {
+        border-bottom: none;
+    }
+
+    .book-details {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .book-details h2 {
+        margin-top: 0;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Aplikasi Perpustakaan</h1>
+    </header>
+
+    <div class="search-form">
+        <input type="text" placeholder="Cari buku...">
+        <button>Cari</button>
+    </div>
+
+    <ul class="book-list">
+        <li>
+            <div>
+                <h3>Judul Buku 1</h3>
+                <p>Penulis: Penulis 1</p>
+                <p>Kategori: Kategori 1</p>
+            </div>
+            <button>Pinjam</button>
+        </li>
+        <li>
+            <div>
+                <h3>Judul Buku 2</h3>
+                <p>Penulis: Penulis 2</p>
+                <p>Kategori: Kategori 2</p>
+            </div>
+            <button>Pinjam</button>
+        </li>
+        <!-- More book items can be added here -->
+    </ul>
+
+    <div class="book-details">
+        <h2>Detail Buku</h2>
+        <p>Judul: <span id="bookTitle">Judul Buku</span></p>
+        <p>Penulis: <span id="bookAuthor">Penulis</span></p>
+        <p>Kategori: <span id="bookCategory">Kategori</span></p>
+        <!-- Additional book details can be added here -->
+    </div>
+</div>
+
+</body>
+</html>
